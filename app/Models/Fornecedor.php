@@ -8,4 +8,9 @@ use Illuminate\Database\Eloquent\Model;
 class Fornecedor extends Model
 {
     use HasFactory;
+    // 
+    protected $table = 'fornecedores';
+
+    // Seta colunas para update
+    protected $fillable = ['nome', 'site', 'uf', 'email'];
 }
